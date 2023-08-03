@@ -1,0 +1,53 @@
+*,
+*::before,
+*::after {
+	padding: 0;
+	margin: 0;
+	border: 0;
+	box-sizing: border-box;
+}
+
+.gallery {
+  padding: 20px 0;
+  &__container {
+    width: 100%;
+    max-width: 1100px;
+    height: 100%;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+
+  &__title {
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    grid-gap: 15px;
+  }
+
+  &__item {
+    cursor: zoom-in;
+  }
+
+  &__img {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+/* Style Fancybox 4 */
+.fancybox__slide {
+    flex-direction: column-reverse !important;
+}
+
+.fancybox__caption {
+    padding: 0 0 1rem 0 !important;
+    text-align: center;
+}

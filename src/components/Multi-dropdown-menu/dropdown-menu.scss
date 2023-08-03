@@ -1,0 +1,180 @@
+:root {
+    --color-primary: #0D534C;
+    --color-primary-light: #0F635B;
+    --color-primary-dark: #0A423C;
+    --color-white: #C5C5C5;
+  }
+  
+  .header {
+    background-color: var(--color-primary);
+  }
+  
+  .logo{
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: var(--color-white);
+    font-weight: 700;
+  }
+  
+  .navigation ul{
+    list-style: none;
+    display: flex;
+  }
+  
+  .navigation ul li{ 
+    position: relative; 
+  }
+
+/*
+    при ховере на li  блок  остаёться на своём уровне  нужно закоментировать .navigation ul li
+                                    и розкоментировать  .navigation li ul
+   .navigation li ul { 
+    position: relative;
+    left: 0;
+  }
+  */
+  
+  .navigation ul li a{
+    font-size: 1.3rem;
+    color: var(--color-white);
+    text-decoration: none;
+    display: block;
+    padding: 1.3rem;
+    transition: all .4s ease-in;
+  }
+  
+  .navigation ul li a:hover{
+    background-color: var(--color-primary-light);
+  }
+  
+  .navigation ul li ul {
+    position: absolute;
+    right: 0;
+    width: 300px;
+    background-color: var(--color-primary);
+    
+    display: none;
+  }
+  
+  .navigation ul li ul li {
+    width: 100%;
+    border-top: 1px solid var(--color-primary-light);
+  }
+  
+  .navigation ul li ul li a {
+    font-size: 1rem;
+    text-transform: capitalize;
+  }
+  
+  .navigation ul li ul li ul {
+    position: absolute;
+    top: 0;
+    left: 300px;
+  }
+  
+  .navigation ul li:hover > ul{
+    display: initial;
+  }
+  
+  .navigation ul li ul li span {
+    float:right;
+    color: var(--color-white);
+    background-color: var(--color-primary-dark);
+    padding: 0.31rem 0.62rem;
+    font-size: 0.75rem;
+    text-align: center;
+    border-radius: 0.3rem;
+  }
+  
+  .hero {
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,.4), rgba(0,0,0,.6));
+  }
+  
+  #toggle, .header label{
+    display: none;
+  }
+  
+  label{
+    color: var(--color-white);
+    font-size: 2.3rem;
+    cursor: pointer;
+    padding-left: 1.3rem;
+  }
+  
+  @media(max-width: 950px) {
+    .header label{
+     display: initial;
+    }
+    
+    .header{
+      padding: 20px 10%;
+    }
+    
+    .header .navigation{
+      position: absolute;
+      /* top: 100%; */
+      left: 0;
+      right: 0;
+      background-color: var(--color-primary);
+      /* display: none; */
+    }
+    
+    .navigation ul{
+      display: block;
+    }
+    
+    .navigation ul li{
+      width: 100%;
+      border-top: 1px solid var(--color-primary-light);
+    }
+    
+    .navigation ul li a{
+      padding: 8px 30px 8px 10%;
+    }
+    
+    .navigation ul li ul {
+      position: relative;
+      width: 100%;
+      left: 0;
+    }
+    
+    .navigation ul li ul li{
+      background-color: var(--color-primary);
+    }
+    
+    .navigation ul li ul li span{
+      padding: 4px 10px;
+      font-size: .9rem;
+    }
+    
+    .navigation ul li ul li ul{
+      position: relative;
+      width: 100%;
+      left: 0;
+    }
+    
+    .navigation ul li ul li a {
+      padding-left: 13%;
+    }
+    
+    .navigation ul li ul li ul li a{
+      padding-left: 16%;
+    }
+    
+    #toggle:checked ~ .navigation{
+      display: block;
+    }
+  }
+  
+  
+
+
+
+
+
+
+
+
+
+

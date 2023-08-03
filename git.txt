@@ -1,0 +1,37 @@
+
+команд 
+git init
+git status 
+git add .
+git status
+git commit -m "Текст коммита"
+git status
+git remote add origin  https://github.com/ynivermine92/calibri.git
+git pull      скачать
+git push -u origin  master   в вовторой раз git push -u origin dev 
+
+git branch  какая ветка показать 
+git branch dev      (создаю ветку dev)
+git checkout dev   (команда менет ветки dev это ветка)
+*****
+git clone  https://github.com/ynivermine92/Marcho.git         клонирует проект
+
+git config --global user.name "user.name"
+git config --global user.email user@email.com
+**********************************
+
+когда продект скачиваю свой или чей то уже готовый 
+
+!сразу протестирывать что бы запушило а пото, писать код 
+0 смотрю какая ветка  git branch
+1 git clone переношу проект 
+2 меняю сразу ветку из мастреа git checkout dev ( на ту ветку какая нужна )
+3 там уже пишу код        
+4 потом уже только пушу  git push 
+
+
+
+
+
+
+
